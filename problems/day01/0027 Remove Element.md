@@ -143,7 +143,7 @@ class Solution:
 
 - 暴力的解法就是两层for循环，一个for循环遍历数组元素 ，第二个for循环更新数组。
 
-![27.移除元素-暴力解法](0027 Remove Element.assets/27.移除元素-暴力解法.gif)
+![27.移除元素-暴力解法](0027%20Remove%20Element.assets/27.移除元素-暴力解法.gif)
 
 ### 2. Important details
 
