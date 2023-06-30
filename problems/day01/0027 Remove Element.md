@@ -88,7 +88,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 - 快指针：寻找新数组的元素 ，新数组就是不含有目标元素的数组
 - 慢指针：指向更新 新数组下标的位置
 
-![27.移除元素-双指针法](0027 Remove Element.assets/27.移除元素-双指针法.gif)
+![27.移除元素-双指针法](0027%20Remove%20Element.assets/27.移除元素-双指针法.gif)
 
 ### 2. Important details
 
