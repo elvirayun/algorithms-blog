@@ -137,7 +137,7 @@ class Solution:
 
 ********
 
-## Solution2
+## Solution2 Brute Force
 
 ### 1. Explanation
 
