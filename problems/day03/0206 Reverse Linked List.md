@@ -131,7 +131,6 @@ class Solution:
   return self.reverse(cur, temp)
   ```
 
-  
 
 ### 3. Complexity
 
