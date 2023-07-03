@@ -77,6 +77,26 @@ Explanation: There is no cycle in the linked list.
 
 [![img](./0142%20Linked%20List%20Cycle%20II.assets/68747470733a2f2f636f64652d7468696e6b696e672d313235333835353039332e66696c652e6d7971636c6f75642e636f6d2f706963732f32303232303932353130333433332e706e67.png)](https://camo.githubusercontent.com/74c0180eec6d7396d787acd1f237765f7852397896c4c431babafe21d655f376/68747470733a2f2f636f64652d7468696e6b696e672d313235333835353039332e66696c652e6d7971636c6f75642e636f6d2f706963732f32303232303932353130333433332e706e67)
 
+<img src="./0142%20Linked%20List%20Cycle%20II.assets/Untitled-2023-07-02-0059.png" alt="Untitled-2023-07-02-0059" style="zoom:50%;" />
+
+- 数学证明：
+
+  若存在环，则 `fast` 指针和 `slow` 指针会会在环内相遇。
+
+  此时：
+
+  ​             ( X + Y ) * 2 = X + Y + ( Y + Z ) * n 
+
+    = >      X + Y = ( Y + Z ) * n
+
+    =>  求X:  `X  = (n - 1) (Y + Z)  + Z`.  [n >= 1]
+
+  以上说明，如果放一个指针 `index1` 在起点节点， 一个指针 `index2` 在相遇节点。
+
+  两个节点同时逐个向前移动，则会在环形入口节点处相遇，此时 `index2` 多转了 `n - 1` 圈。
+  
+  当 `n == 1` 时，`X == Z`
+
 ### 2. Important details
 
 - `fast` 要比 `slow` 快的相对速度为1
