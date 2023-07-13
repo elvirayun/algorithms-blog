@@ -134,7 +134,7 @@ class MyStack:
 
 - We can not use `self.queue = self.queue_back` to copy deque, because it's a shallow copy, which means if we change the elements in one of the deques, then both deques elements will be changed.
 
-
+- 在python 中list 等数据结构存的是里面元素的地址，所以如果是shallow copy, 则两个list的元素地址们是相同的，所以在其中一个list修改，另一个也会被修改。
 
 ### 3. Complexity
 
