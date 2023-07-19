@@ -148,7 +148,7 @@ class Solution:
             if cur:
                 stack.append(cur)
                 cur = cur.left
-            # cur == None, 说明以到达最左下角
+            # cur == None, 说明已到达最左下角
             else:
                 cur = stack.pop()
                 # 存入result数组, 此时存入的是中
