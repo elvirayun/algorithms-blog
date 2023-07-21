@@ -51,7 +51,7 @@ Output: 5
 
 ### 1. Explanation
 
-<img src="./111.%20Minimum%20Depth%20of%20Binary%20Tree.assets/111.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%B0%8F%E6%B7%B1%E5%BA%A6.png" alt="111.二叉树的最小深度" style="zoom: 50%;" />
+<img src="./0111%20Minimum%20Depth%20of%20Binary%20Tree.assets/111.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%B0%8F%E6%B7%B1%E5%BA%A6.png" alt="111.二叉树的最小深度" style="zoom: 50%;" />
 
 **求二叉树的最小深度和求二叉树的最大深度的差别主要在于处理左右孩子不为空的逻辑。**
 

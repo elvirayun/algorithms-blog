@@ -12,7 +12,7 @@ A binary tree's **maximum depth** is the number of nodes along the longest path 
 
 **Example 1:**
 
-![img](./104.%20Maximum%20Depth%20of%20Binary%20Tree.assets/tmp-tree.jpg)
+![img](./0104%20Maximum%20Depth%20of%20Binary%20Tree.assets/tmp-tree.jpg)
 
 ```
 Input: root = [3,9,20,null,null,15,7]
@@ -53,7 +53,7 @@ Output: 2
 
 - 后序遍历
 
-<img src="./104.%20Maximum%20Depth%20of%20Binary%20Tree.assets/image-20230721103504195.png" alt="image-20230721103504195" style="zoom: 25%;" />
+<img src="./0104%20Maximum%20Depth%20of%20Binary%20Tree.assets/image-20230721103504195.png" alt="image-20230721103504195" style="zoom: 25%;" />
 
 ### 2. Important details
 

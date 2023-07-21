@@ -14,7 +14,7 @@ The maximum depth is the number of nodes along the longest path from the root no
 
 **Example 1:**
 
-![img](./559.%20Maximum%20Depth%20of%20N-ary%20Tree.assets/narytreeexample.png)
+![img](./0559%20Maximum%20Depth%20of%20N-ary%20Tree.assets/narytreeexample.png)
 
 ```
 Input: root = [1,null,3,2,4,null,5,6]
@@ -23,7 +23,7 @@ Output: 3
 
 **Example 2:**
 
-![img](./559.%20Maximum%20Depth%20of%20N-ary%20Tree.assets/sample_4_964.png)
+![img](./0559%20Maximum%20Depth%20of%20N-ary%20Tree.assets/sample_4_964.png)
 
 ```
 Input: root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]

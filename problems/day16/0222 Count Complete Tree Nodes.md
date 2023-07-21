@@ -14,7 +14,7 @@ Design an algorithm that runs in less than `O(n)` time complexity.
 
 **Example 1:**
 
-![img](./222.%20Count%20Complete%20Tree%20Nodes.assets/complete.jpg)
+![img](./0222%20Count%20Complete%20Tree%20Nodes.assets/complete.jpg)
 
 ```
 Input: root = [1,2,3,4,5,6]
@@ -61,11 +61,11 @@ Output: 1
 
 ### 1. Explanation
 
-<img src="./222.%20Count%20Complete%20Tree%20Nodes.assets/20200920221638903-20230310123444151.png" alt="img" style="zoom: 50%;" />
+<img src="./0222%20Count%20Complete%20Tree%20Nodes.assets/20200920221638903-20230310123444151.png" alt="img" style="zoom: 50%;" />
 
-<img src="./222.%20Count%20Complete%20Tree%20Nodes.assets/20201124092543662.png" alt="222.完全二叉树的节点个数" style="zoom:50%;" />
+<img src="./0222%20Count%20Complete%20Tree%20Nodes.assets/20201124092543662.png" alt="222.完全二叉树的节点个数" style="zoom:50%;" />
 
-<img src="./222.%20Count%20Complete%20Tree%20Nodes.assets/20220829163554.png" alt="img" style="zoom:50%;" />
+<img src="./0222%20Count%20Complete%20Tree%20Nodes.assets/20220829163554.png" alt="img" style="zoom:50%;" />
 
 ### 2. Important details
 
