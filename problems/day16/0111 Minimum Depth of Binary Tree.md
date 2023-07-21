@@ -12,7 +12,7 @@ The minimum depth is the number of nodes along the shortest path from the root n
 
 **Example 1:**
 
-![img](./111.%20Minimum%20Depth%20of%20Binary%20Tree.assets/ex_depth.jpg)
+![img](./0111%20Minimum%20Depth%20of%20Binary%20Tree.assets/ex_depth.jpg)
 
 ```
 Input: root = [3,9,20,null,null,15,7]
