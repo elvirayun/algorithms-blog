@@ -1,41 +1,36 @@
-# 46. Permutations
+# [47. Permutations II](https://leetcode.com/problems/permutations-ii/)
 
 ## Problem
 
 *****
 
-Given an array `nums` of distinct integers, return *all the possible permutations*. You can return the answer in **any order**.
+Given a collection of numbers, `nums`, that might contain duplicates, return *all possible unique permutations **in any order**.*
 
  
 
 **Example 1:**
 
 ```
-Input: nums = [1,2,3]
-Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+Input: nums = [1,1,2]
+Output:
+[[1,1,2],
+ [1,2,1],
+ [2,1,1]]
 ```
 
 **Example 2:**
 
 ```
-Input: nums = [0,1]
-Output: [[0,1],[1,0]]
-```
-
-**Example 3:**
-
-```
-Input: nums = [1]
-Output: [[1]]
+Input: nums = [1,2,3]
+Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
 ```
 
  
 
 **Constraints:**
 
-- `1 <= nums.length <= 6`
+- `1 <= nums.length <= 8`
 - `-10 <= nums[i] <= 10`
-- All the integers of `nums` are **unique**.
 
 ******
 
@@ -55,9 +50,8 @@ Output: [[1]]
 
 ### 1. Explanation
 
-
-
-
+- 一个带入回溯过程的usedSet
+- 一个记录单层重复的usedInLayer
 
 ### 2. Important details
 
@@ -79,26 +73,28 @@ class Solution:
     def __init__(self) -> None:
         self.path = []
         self.result = []
-        self.usedSet = set()
+        self.usedSet = []
 
     def backtracking(self, nums: List[int]) -> None:
+        usedinLayer = set()
         if len(self.path) == len(nums):
             self.result.append(self.path[:])
             return
         for i in range(len(nums)):
-            if nums[i] in self.usedSet:
+            if self.usedSet[i]  or nums[i] in usedinLayer:
                 continue
+            usedinLayer.add(nums[i])
             self.path.append(nums[i])
-            self.usedSet.add(nums[i])
+            self.usedSet[i] = True
             self.backtracking(nums)
             self.path.pop()
-            self.usedSet.discard(nums[i])
+            self.usedSet[i] = False
         return
 
-    def permute(self, nums: List[int]) -> List[List[int]]:
+    def permuteUnique(self, nums: List[int]) -> List[List[int]]:
         self.path.clear()
         self.result.clear()
-        self.usedSet.clear()
+        self.usedSet = [0] * len(nums)
         self.backtracking(nums)
         return self.result
 ```
@@ -116,6 +112,8 @@ class Solution:
 
 
 ### 2. Important details
+
+
 
 
 
